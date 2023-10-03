@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0"
+	xmlns="https://jakarta.ee/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence 
+             https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
+	<persistence-unit name="JEETUT"
+		transaction-type="RESOURCE_LOCAL">
+		<!-- Define the class for Hibernate which implements JPA -->
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<!-- Define the object that should be persisted in the database -->
+		<class>com.newthinktank.JEETut.Customer</class>
+		<properties>
+			<!-- Driver for DB database -->
+			<property name="jakarta.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<!-- URL for DB -->
+			<property name="jakarta.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/test4" />
+			<!-- Username -->
+			<property name="jakarta.persistence.jdbc.user" value="root" />
+			<!-- Password -->
+			<property name="jakarta.persistence.jdbc.password"
+				value="sicilian" />
+			<property
+				name="jakarta.persistence.schema-generation.database.action"
+				value="create" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
+	
+    
