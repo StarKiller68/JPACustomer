@@ -21,7 +21,7 @@
 			<property name="jakarta.persistence.jdbc.user" value="root" />
 			<!-- Password -->
 			<property name="jakarta.persistence.jdbc.password"
-				value="sicilian" />
+				value="" />
 			<property
 				name="jakarta.persistence.schema-generation.database.action"
 				value="create" />
